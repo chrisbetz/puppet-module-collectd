@@ -20,6 +20,7 @@ class collectd(
     ensure   => $version,
     name     => $collectd::params::package,
     provider => $collectd::params::provider,
+    source  => $collectd::params::source,
     before   => File['collectd.conf', 'collectd.d'],
   }
 

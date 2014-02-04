@@ -25,6 +25,7 @@ class collectd::params {
     'Redhat': {
       $package           = 'collectd'
       $provider          = 'yum'
+      $source            = 'http://pkgs.repoforge.org/collectd/collectd-5.1.0-1.el6.rft.x86_64.rpm'   # FIXME: this is an extremely dirty hack!!!
       $collectd_dir      = '/etc/collectd.d'
       $plugin_conf_dir   = $collectd_dir
       $service_name      = 'collectd'
